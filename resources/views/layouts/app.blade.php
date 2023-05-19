@@ -24,15 +24,16 @@
 
 <!-- Text Header -->
 <header class="w-full container mx-auto">
-    <div class="flex flex-col items-center py-12">
-        <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="{{route('home')}}">
-            The Komar N.M. Blog
+    <div class="flex flex-col items-center justify-center py-12">
+        <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl text-center" href="{{route('home')}}">
+            The <br>Komar N.M.<br> Blog
         </a>
-        <p class="text-lg text-gray-600">
+        <p class="text-lg text-gray-600 text-center">
             {{ \App\Models\TextWidget::getTitle('header') }}
         </p>
     </div>
 </header>
+
 
 <!-- Topic Nav -->
 <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
@@ -55,14 +56,14 @@
                        class="hover:bg-blue-600 hover:text-white rounded py-2 px-4 mx-2">{{$category->title}}</a>
                 @endforeach
                 <a href="{{route('about-us')}}" class="hover:bg-blue-600 hover:text-white rounded py-2 px-4 mx-2">About
-                    us</a>
+                    </a>
             </div>
 
             <div class="flex items-center">
                 <form method="get" action="{{route('search')}}">
                     <input name="q" value="{{request()->get('q')}}"
                            class="block w-full rounded-md border-0 px-3.5 py-2 t0ext-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 font-medium"
-                           placeholder="Type to search"/>
+                           placeholder="Type to search..."/>
                 </form>
                 @auth
                     <div class="flex sm:items-center sm:ml-6">
