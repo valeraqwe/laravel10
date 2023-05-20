@@ -11,7 +11,7 @@
           ✏️</text></svg>">
 
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&display=swap');
     </style>
 
     <!-- Font Awesome -->
