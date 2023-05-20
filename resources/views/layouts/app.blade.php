@@ -6,6 +6,9 @@
     <title>{{ $metaTitle ?: 'The Komar N.M. Blog' }}</title>
     <meta name="author" content="The Komar N.M. Blog">
     <meta name="description" content="{{ $metaDescription }}">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+          🎓</text></svg>">
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
