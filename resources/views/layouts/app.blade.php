@@ -8,7 +8,7 @@
     <meta name="description" content="{{ $metaDescription }}">
     <link rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
-          🎓</text></svg>">
+          ✏️</text></svg>">
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
@@ -112,6 +112,7 @@
 <footer class="w-full border-t bg-white pb-12">
     <div class="w-full container mx-auto flex flex-col items-center">
         <div class="uppercase py-6">&copy; komar-nm.net.ua 2023</div>
+        <p>Made with 💚 by  Valeriy Komar</p>
     </div>
 </footer>
 
