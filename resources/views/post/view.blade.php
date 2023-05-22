@@ -31,12 +31,12 @@
                 </div>
             </article>
 
-            <div class="w-full flex pt-6">
-                <div class="w-1/2">
+            <div class="w-full flex flex-col pt-6 sm:flex-row sm:items-center">
+                <div class="w-full sm:w-1/2 mb-4 sm:mb-0 sm:pr-2">
                     @if($prev)
                         <a href="{{route('view', $prev)}}"
-                           class="block w-full bg-white shadow hover:shadow-md hover:bg-blue-200 text-left p-6 rounded-lg border border-gray-300 transition duration-300 ease-in-out transform hover:scale-105">
-                            <p class="text-lg text-blue-800 font-bold flex items-center">
+                           class="block w-full bg-white shadow hover:shadow-md text-left p-6 rounded-lg border border-gray-300">
+                            <p class="text-lg text-blue-800 font-bold flex items-center text-sm sm:text-lg">
                                 <i class="fas fa-arrow-left pr-1"></i>
                                 Previous
                             </p>
@@ -44,11 +44,11 @@
                         </a>
                     @endif
                 </div>
-                <div class="w-1/2">
+                <div class="w-full sm:w-1/2">
                     @if($next)
                         <a href="{{route('view', $next)}}"
-                           class="block w-full bg-white shadow hover:shadow-md hover:bg-blue-200 text-right p-6 rounded-lg border border-gray-300 transition duration-300 ease-in-out transform hover:scale-105">
-                            <p class="text-lg text-blue-800 font-bold flex items-center justify-end">
+                           class="block w-full bg-white shadow hover:shadow-md text-right p-6 rounded-lg border border-gray-300">
+                            <p class="text-lg text-blue-800 font-bold flex items-center justify-end text-sm sm:text-lg">
                                 Next <i class="fas fa-arrow-right pl-1"></i>
                             </p>
                             <p class="pt-2">{{\Illuminate\Support\Str::words($next->title, 5)}}</p>
@@ -56,7 +56,6 @@
                     @endif
                 </div>
             </div>
-
 
 
             <livewire:comments :post="$post"/>
