@@ -127,7 +127,8 @@
 <footer class="w-full border-t bg-white pb-12">
     <div class="w-full container mx-auto flex flex-col items-center">
         <div class="uppercase py-6">&copy; komar-nm.net.ua 2023</div>
-        <p>Made with 💚 by Valeriy Komar</p>
+        <p>Made with 💚 by <a href="https://github.com/valeraqwe"></a>Valeriy Komar
+        </p>
     </div>
 </footer>
 
