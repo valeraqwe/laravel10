@@ -57,13 +57,12 @@
 
             <div class="hidden sm:flex">
                 @foreach($categories as $category)
-                    <a href="{{ route('by-category', $category) }}" class="nav-link-categories nav-link rounded py-3 px-4 mx-4">{{ $category->title }}</a>
+                    <a href="{{ route('by-category', $category) }}" class="nav-link rounded py-3 px-4 mx-4">{{ $category->title }}</a>
                 @endforeach
             </div>
         </div>
     </div>
 </nav>
-
 
 <!-- Site Content -->
 <div class="container mx-auto py-6">

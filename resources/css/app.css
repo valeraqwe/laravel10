@@ -9,19 +9,4 @@ pre {
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
-.nav-link {
-    transition: all 0.3s ease;
-}
-.nav-link:hover {
-    background-color: #1E40AF;
-    color: #FFFFFF;
-    transform: scale(1.05);
-}
-.nav-link-categories {
-    order: 2; /* Set the order of Categories */
-}
-@media (max-width: 640px) {
-    .nav-link-categories {
-        order: 1; /* Adjust the order for mobile screens */
-    }
-}
+
