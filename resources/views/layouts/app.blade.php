@@ -9,7 +9,6 @@
     <link rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
           ✏️</text></svg>">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&display=swap');
     </style>
@@ -22,7 +21,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-50 font-family-karla">
+<body class="bg-gray-50 font-family-lobster">
 
 
 <!-- Text Header -->
@@ -37,33 +36,35 @@
     </div>
 </header>
 
-<!-- Nav -->
+
 <nav class="w-full items-center py-6 border-t border-b bg-gray-100" x-data="{ open: false }">
     <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-4">
         <div class="my-2 flex items-center justify-center">
-            <a href="{{route('home')}}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4">Home</a>
+            <a href="{{ route('home') }}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">Home</a>
 
             <div class="relative sm:hidden">
-                <button @click="open = !open" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4">
+                <button @click="open = !open" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">
                     Categories <i :class="open ? 'fa-chevron-up': 'fa-chevron-down'" class="fas ml-2"></i>
                 </button>
                 <div x-show="open" @click.away="open = false" class="absolute z-10 w-40 bg-white rounded shadow-lg mt-2">
                     @foreach($categories as $category)
-                        <a href="{{route('by-category', $category)}}" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">{{$category->title}}</a>
+                        <a href="{{ route('by-category', $category) }}" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 transition-all duration-500">{{ $category->title }}</a>
                     @endforeach
                 </div>
             </div>
 
             <div class="hidden sm:flex">
                 @foreach($categories as $category)
-                    <a href="{{route('by-category', $category)}}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4">{{$category->title}}</a>
+                    <a href="{{ route('by-category', $category) }}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">{{ $category->title }}</a>
                 @endforeach
             </div>
 
-            <a href="{{route('about-author')}}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4">About</a>
+            <a href="{{ route('about-author') }}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">About</a>
         </div>
     </div>
 </nav>
+
+
 
 <!-- Site Content -->
 <div class="container mx-auto py-6">
@@ -112,11 +113,11 @@
         @else
             <div class="flex items-center mt-4 sm:mt-0">
                 <a href="{{ route('login') }}"
-                   class="hover:bg-blue-600 hover:text-white rounded py-1 px-2 sm:px-4 mx-2">Login</a>
-                <a href="{{ route('register') }}" class="bg-blue-600 text-white rounded py-1 px-2 sm:px-4 mx-2">Register</a>
+                   class="hover:bg-blue-600 hover:text-white rounded py-1 px-2 sm:px-4 mx-2 transition duration-300 ease-in-out transform hover:scale-105">Login</a>
+                <a href="{{ route('register') }}"
+                   class="bg-blue-600 text-white rounded py-1 px-2 sm:px-4 mx-2 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">Register</a>
             </div>
         @endauth
-
     </div>
 
     <!-- Site Content -->
