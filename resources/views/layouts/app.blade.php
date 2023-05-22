@@ -40,30 +40,29 @@
 <nav class="w-full items-center py-6 border-t border-b bg-gray-100" x-data="{ open: false }">
     <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-4">
         <div class="my-2 flex items-center justify-center">
-            <a href="{{ route('home') }}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">Home</a>
+            <a href="{{ route('home') }}" class="nav-link rounded py-3 px-4 mx-4">Home</a>
 
             <div class="relative sm:hidden">
-                <button @click="open = !open" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">
+                <button @click="open = !open" class="nav-link rounded py-3 px-4 mx-4">
                     Categories <i :class="open ? 'fa-chevron-up': 'fa-chevron-down'" class="fas ml-2"></i>
                 </button>
                 <div x-show="open" @click.away="open = false" class="absolute z-10 w-40 bg-white rounded shadow-lg mt-2">
                     @foreach($categories as $category)
-                        <a href="{{ route('by-category', $category) }}" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 transition-all duration-500">{{ $category->title }}</a>
+                        <a href="{{ route('by-category', $category) }}" class="nav-link block px-4 py-2 text-gray-800 hover:bg-gray-200">{{ $category->title }}</a>
                     @endforeach
                 </div>
             </div>
 
+            <a href="{{ route('about-author') }}" class="nav-link rounded py-3 px-4 mx-4">About</a>
+
             <div class="hidden sm:flex">
                 @foreach($categories as $category)
-                    <a href="{{ route('by-category', $category) }}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">{{ $category->title }}</a>
+                    <a href="{{ route('by-category', $category) }}" class="nav-link-categories nav-link rounded py-3 px-4 mx-4">{{ $category->title }}</a>
                 @endforeach
             </div>
-
-            <a href="{{ route('about-author') }}" class="hover:bg-blue-600 hover:text-white rounded py-3 px-4 mx-4 transition-all duration-500">About</a>
         </div>
     </div>
 </nav>
-
 
 
 <!-- Site Content -->
