@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
                 NavigationItem::make('Valeriy Komar')
                     ->url('https://github.com/valeraqwe', shouldOpenInNewTab: true)
                     ->icon('heroicon-o-globe-alt')
-                    ->group('Content Creator')
+                    ->group('Web Site Creator')
                     ->sort(3),
             ]);
         });
