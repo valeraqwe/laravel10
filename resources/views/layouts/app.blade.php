@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $metaTitle ?: 'The Komar N.M. Blog - best place who love Ukraine' }}</title>
     <meta name="author" content="The Komar N.M. Blog">
-    <meta name="description" content="{{ $metaDescription }}">
+    <meta name="description" content="Here you will find all about ukrainian language and world literature!">
     <link rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
           ✏️</text></svg>">
