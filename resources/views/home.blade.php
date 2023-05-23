@@ -1,5 +1,5 @@
 <x-app-layout meta-title="The Komar N.M. Blog"
-              meta-description="Here you will find all about ukrainian language! ">
+              meta-description="Here you will find all about ukrainian language and world literature!">
     <div class="container max-w-4xl mx-auto py-6">
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

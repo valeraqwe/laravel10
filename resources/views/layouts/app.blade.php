@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $metaTitle ?: 'The Komar N.M. Blog' }}</title>
+    <title>{{ $metaTitle ?: 'The Komar N.M. Blog - best place who love Ukraine' }}</title>
     <meta name="author" content="The Komar N.M. Blog">
     <meta name="description" content="{{ $metaDescription }}">
     <link rel="icon"
