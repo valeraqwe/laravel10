@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $metaTitle ?: 'The Komar N.M. Blog - best place who love Ukraine' }}</title>
-    <meta name="google-site-verification" content="QpfNuuvDdJFnW_wof2ZhNjwZu5pqdlXw4DIhafginW4" />
+    <meta name="google-site-verification" content="QFEHOTv6xljhM1Wix1aTcWyZe8RpvylE9cYu1O8XLHw" />
     <meta name="author" content="The Komar N.M. Blog">
     <meta name="description" content="{{ $metaDescription }}">
     <meta property="og:image" content="{{ url('images/ukraine-flag.jpg') }}">
