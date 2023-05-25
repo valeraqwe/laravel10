@@ -23,7 +23,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-50 font-family-lobster">
+<body class="bg-gray-200 font-family-lobster">
 
 
 <!-- Text Header -->
@@ -39,7 +39,7 @@
 </header>
 
 
-<nav class="w-full items-center py-6 border-t border-b bg-gray-100" x-data="{ open: false }">
+<nav class="w-full bg-gray-300 items-center py-6 border-t border-b bg-gray-100" x-data="{ open: false }">
     <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-4">
         <div class="my-2 flex items-center justify-center">
             <a href="{{ route('home') }}" class="nav-link rounded py-3 px-4 mx-4">Home</a>
@@ -126,7 +126,7 @@
 </div>
 
 
-<footer class="w-full border-t bg-white pb-12">
+<footer class="w-full border-t bg-gray-300 pb-12">
     <div class="w-full container mx-auto flex flex-col items-center">
         <div class="uppercase py-6">&copy; komar-nm.net.ua 2023</div>
         <p>Made with 💚 by <a class="hover:bg-gray-500/10" href="https://github.com/valeraqwe"> Valeriy Komar</a>
