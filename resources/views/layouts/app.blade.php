@@ -46,7 +46,7 @@
 
             <div class="relative sm:hidden">
                 <button @click="open = !open" class="nav-link rounded py-2">
-                    Categories <i :class="open ? 'fa-chevron-up': 'fa-chevron-down'" class="fas ml-2"></i>
+                    Категорії<i :class="open ? 'fa-chevron-up': 'fa-chevron-down'" class="fas ml-2"></i>
                 </button>
                 <div x-show="open" @click.away="open = false" class="absolute z-10 w-40 bg-white rounded shadow-lg mt-2">
                     @foreach($categories as $category)
