@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $metaTitle ?: 'Комар Н.М.' }}</title>
+    <title>{{ $metaTitle ?: 'Комар Н.М. - персональний сайт' }}</title>
     <meta name="google-site-verification" content="QFEHOTv6xljhM1Wix1aTcWyZe8RpvylE9cYu1O8XLHw" />
     <meta name="author" content="Комар Н.М.">
     <meta name="description" content="{{ $metaDescription }}">
