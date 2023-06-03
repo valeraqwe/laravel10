@@ -38,8 +38,8 @@
                             <div class="text-xs">
                                 {{$post->shortBody(10)}}
                             </div>
-                            <a href="{{route('view', $post)}}" class="text-xs uppercase text-gray-800 hover:text-black">Continue
-                                Reading <i class="fas fa-arrow-right"></i>
+                            <a href="{{route('view', $post)}}" class="text-xs uppercase text-gray-800 hover:text-black">Продовжити
+                                Читання <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>

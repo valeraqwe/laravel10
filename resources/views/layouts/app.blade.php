@@ -61,7 +61,7 @@
                 @endforeach
             </div>
 
-            <a href="{{ route('about-author') }}" class="nav-link rounded py-3 px-4 mx-4">Про Автора</a>
+            <a href="{{ route('about-author') }}" class="nav-link rounded py-3 px-4 mx-4">Автор</a>
         </div>
     </div>
 </nav>
