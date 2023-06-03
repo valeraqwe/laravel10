@@ -42,7 +42,7 @@
 <nav class="w-full bg-gray-300 items-center py-6 border-t border-b bg-gray-100" x-data="{ open: false }">
     <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-4">
         <div class="my-2 flex items-center justify-center">
-            <a href="{{ route('home') }}" class="nav-link rounded py-3 px-4 mx-4">Home</a>
+            <a href="{{ route('home') }}" class="nav-link rounded py-3 px-4 mx-4">Головна</a>
 
             <div class="relative sm:hidden">
                 <button @click="open = !open" class="nav-link rounded py-2">
@@ -61,7 +61,7 @@
                 @endforeach
             </div>
 
-            <a href="{{ route('about-author') }}" class="nav-link rounded py-3 px-4 mx-4">About</a>
+            <a href="{{ route('about-author') }}" class="nav-link rounded py-3 px-4 mx-4">Про Автора</a>
         </div>
     </div>
 </nav>
@@ -74,7 +74,7 @@
         <form method="get" action="{{ route('search') }}">
             <input name="q" value="{{ request()->get('q') }}"
                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 font-medium"
-                   placeholder="🔍 Type to search ..."/>
+                   placeholder="🔍 Натисни для пошуку..."/>
         </form>
     @auth
             <div class="flex sm:items-center sm:ml-6">
