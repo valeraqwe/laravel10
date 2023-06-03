@@ -20,7 +20,7 @@
                         {{$post->title}}
                     </h1>
                     <p href="#" class="text-sm pb-8">
-                        By <a href="#" class="font-semibold hover:text-gray-800">{{$post->user->name}}</a>, Published on
+                        By <a href="#" class="font-semibold hover:text-gray-800">{{$post->user->name}}</a>, Опубліковано
                         {{$post->getFormattedDate()}} | {{ $post->human_read_time }}
                     </p>
                     <div>
@@ -38,7 +38,7 @@
                            class="block w-full bg-white shadow hover:shadow-md text-left p-6 rounded-lg border border-gray-300">
                             <p class="text-lg text-blue-800 font-bold flex items-center text-sm sm:text-lg">
                                 <i class="fas fa-arrow-left pr-1"></i>
-                                Previous
+                                Попередня
                             </p>
                             <p class="pt-2">{{\Illuminate\Support\Str::words($prev->title, 5)}}</p>
                         </a>
@@ -49,7 +49,7 @@
                         <a href="{{route('view', $next)}}"
                            class="block w-full bg-white shadow hover:shadow-md text-right p-6 rounded-lg border border-gray-300">
                             <p class="text-lg text-blue-800 font-bold flex items-center justify-end text-sm sm:text-lg">
-                                Next <i class="fas fa-arrow-right pl-1"></i>
+                                Наступна <i class="fas fa-arrow-right pl-1"></i>
                             </p>
                             <p class="pt-2">{{\Illuminate\Support\Str::words($next->title, 5)}}</p>
                         </a>

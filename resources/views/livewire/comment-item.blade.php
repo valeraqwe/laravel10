@@ -22,10 +22,10 @@
             </div>
         @endif
         <div>
-            <a wire:click.prevent="startReply" href="#" class="text-sm text-indigo-600 mr-3">Reply</a>
+            <a wire:click.prevent="startReply" href="#" class="text-sm text-indigo-600 mr-3">Відповісти</a>
             @if (\Illuminate\Support\Facades\Auth::id() == $comment->user_id)
-                <a wire:click.prevent="startCommentEdit" href="#" class="text-sm text-blue-600 mr-3">Edit</a>
-                <a wire:click.prevent="deleteComment" href="#" class="text-sm text-red-600">Delete</a>
+                <a wire:click.prevent="startCommentEdit" href="#" class="text-sm text-blue-600 mr-3">Редагувати</a>
+                <a wire:click.prevent="deleteComment" href="#" class="text-sm text-red-600">Видалити</a>
             @endif
         </div>
         @if ($replying)
