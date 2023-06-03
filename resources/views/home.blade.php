@@ -1,5 +1,5 @@
-<x-app-layout meta-title="The Komar N.M. Blog"
-              meta-description="Here you will find all about ukrainian language and world literature!">
+<x-app-layout meta-title="Комар Наталія - Персольний сайт"
+              meta-description="Тут ви знайдете все про українську мову, літературу🇺🇦 та світову літературу📚!">
     <div class="container max-w-4xl mx-auto py-6">
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
