@@ -114,9 +114,9 @@
         @else
             <div class="flex items-center mt-4 sm:mt-0">
                 <a href="{{ route('login') }}"
-                   class="hover:bg-blue-600 hover:text-white rounded py-1 px-2 sm:px-4 mx-2 transition duration-300 ease-in-out transform hover:scale-105">Login</a>
+                   class="hover:bg-blue-600 hover:text-white rounded py-1 px-2 sm:px-4 mx-2 transition duration-300 ease-in-out transform hover:scale-105">Увійти</a>
                 <a href="{{ route('register') }}"
-                   class="bg-blue-600 text-white rounded py-1 px-2 sm:px-4 mx-2 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">Register</a>
+                   class="bg-blue-600 text-white rounded py-1 px-2 sm:px-4 mx-2 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-md">Реєстрація</a>
             </div>
         @endauth
     </div>
