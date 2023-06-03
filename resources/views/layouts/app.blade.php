@@ -30,7 +30,7 @@
 <header class="w-full container mx-auto">
     <div class="flex flex-col items-center justify-center py-12">
         <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl text-center" href="{{route('home')}}">
-            Комар Н.М.<br>Персональний<br>сайт
+            Персональний сайт<br>Комар Наталії<br>Миколаївни
         </a>
         <p class="text-lg text-gray-600 text-center">
             {{ \App\Models\TextWidget::getTitle('header') }}
