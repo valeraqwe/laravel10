@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $metaTitle ?: 'The Komar N.M. Blog - best place who love Ukraine' }}</title>
+    <title>{{ $metaTitle ?: 'Комар Н.М.' }}</title>
     <meta name="google-site-verification" content="QFEHOTv6xljhM1Wix1aTcWyZe8RpvylE9cYu1O8XLHw" />
-    <meta name="author" content="The Komar N.M. Blog">
+    <meta name="author" content="Комар Н.М.">
     <meta name="description" content="{{ $metaDescription }}">
     <meta property="og:image" content="{{ url('images/ukraine-flag.jpg') }}">
     <link rel="icon"
@@ -30,7 +30,7 @@
 <header class="w-full container mx-auto">
     <div class="flex flex-col items-center justify-center py-12">
         <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl text-center" href="{{route('home')}}">
-            The <br>Komar N.M.<br> Blog
+            Комар Н.М.<br>Персональний<br>сайт
         </a>
         <p class="text-lg text-gray-600 text-center">
             {{ \App\Models\TextWidget::getTitle('header') }}

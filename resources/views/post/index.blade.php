@@ -1,4 +1,4 @@
-<x-app-layout :meta-title="'The Komar N.M. Blog - ' . $category->title"
+<x-app-layout :meta-title="'Комар Н.М. - ' . $category->title"
               :meta-description="'Posts filtered by category ' . $category->title">
     <div class="container mx-auto flex flex-wrap py-6">
 

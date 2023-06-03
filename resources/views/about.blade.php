@@ -1,4 +1,4 @@
-<x-app-layout meta-title="The Komar N.M. Blog - About Author">
+<x-app-layout meta-title="Комар Н.М. - Про автора">
 
     <div class="container mx-auto flex flex-wrap py-6">
 
